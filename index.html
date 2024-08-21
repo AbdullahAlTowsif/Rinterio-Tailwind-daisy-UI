@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,68 @@
     </style>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'dark-green': '#ABEF5F',
+                        'light-green': '#ABEF5F80',
+                        'major-color': '#212121',
+                        'major-two': '#494949',
+                    }
+                }
             }
-          }
         }
     </script>
     <title>Rinterio</title>
 </head>
-<body>
-    
+
+
+<body class="font-manrope md:container md:mx-auto">
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="flex space-x-4 items-center">
+                    <div class="w-5 h-5 rounded-full bg-dark-green text-center"><i
+                            class="fa-solid fa-arrow-right -rotate-45 text-black"></i></div>
+                    <div>
+                        <a class="text-3xl font-bold text-major-color">Rinterio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-major-two font-bold">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle hidden lg:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle hidden lg:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </button>
+                <div class="hidden lg:block">
+                    <a class="btn bg-dark-green text-slate-950 font-bold rounded-full">Book Consult <div
+                            class="w-4 h-4 rounded-full bg-black"><i
+                                class="fa-solid fa-arrow-right -rotate-45 text-white"></i></div></a>
+                </div>
+            </div>
+            <button class="lg:hidden text-gray-500"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
 </body>
+
 </html>
